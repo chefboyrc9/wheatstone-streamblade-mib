@@ -1,0 +1,1371 @@
+
+MY-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+    MODULE-IDENTITY, OBJECT-TYPE, Integer32, TimeTicks, Gauge, OID, OctetString
+        FROM SNMPv2-SMI
+    DisplayString
+        FROM SNMPv2-TC;
+
+myMIB MODULE-IDENTITY
+    LAST-UPDATED "202504120000Z"
+    ORGANIZATION "My Organization"
+    CONTACT-INFO
+        "Contact Name
+        Address
+        Phone
+        Email"
+    DESCRIPTION
+        "This is a sample MIB module based on the provided XML data."
+    REVISION "202504120000Z"
+    DESCRIPTION
+        "Initial version."
+    ::= { enterprises 99999 }
+
+-- Objects
+
+sysDescr_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.1.0"
+    ::= { myMIB _1_3_6_1_2_1_1_1_0 }
+
+sysObjectID_0 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.2.0"
+    ::= { myMIB _1_3_6_1_2_1_1_2_0 }
+
+sysUpTime_0 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.3.0"
+    ::= { myMIB _1_3_6_1_2_1_1_3_0 }
+
+sysContact_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.4.0"
+    ::= { myMIB _1_3_6_1_2_1_1_4_0 }
+
+sysName_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.5.0"
+    ::= { myMIB _1_3_6_1_2_1_1_5_0 }
+
+sysLocation_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.6.0"
+    ::= { myMIB _1_3_6_1_2_1_1_6_0 }
+
+sysServices_0 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.7.0"
+    ::= { myMIB _1_3_6_1_2_1_1_7_0 }
+
+_1_3_6_1_2_1_1_8_0 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.8.0"
+    ::= { myMIB _1_3_6_1_2_1_1_8_0 }
+
+_1_3_6_1_2_1_1_9_1_2_1 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.1"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_1 }
+
+_1_3_6_1_2_1_1_9_1_2_2 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.2"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_2 }
+
+_1_3_6_1_2_1_1_9_1_2_3 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.3"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_3 }
+
+_1_3_6_1_2_1_1_9_1_2_4 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.4"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_4 }
+
+_1_3_6_1_2_1_1_9_1_2_5 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.5"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_5 }
+
+_1_3_6_1_2_1_1_9_1_2_6 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.6"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_6 }
+
+_1_3_6_1_2_1_1_9_1_2_7 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.7"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_7 }
+
+_1_3_6_1_2_1_1_9_1_2_8 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.8"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_8 }
+
+_1_3_6_1_2_1_1_9_1_2_9 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.9"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_9 }
+
+_1_3_6_1_2_1_1_9_1_2_10 OBJECT-TYPE
+    SYNTAX      OID
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.2.10"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_2_10 }
+
+_1_3_6_1_2_1_1_9_1_3_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.1"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_1 }
+
+_1_3_6_1_2_1_1_9_1_3_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.2"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_2 }
+
+_1_3_6_1_2_1_1_9_1_3_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.3"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_3 }
+
+_1_3_6_1_2_1_1_9_1_3_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.4"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_4 }
+
+_1_3_6_1_2_1_1_9_1_3_5 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.5"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_5 }
+
+_1_3_6_1_2_1_1_9_1_3_6 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.6"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_6 }
+
+_1_3_6_1_2_1_1_9_1_3_7 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.7"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_7 }
+
+_1_3_6_1_2_1_1_9_1_3_8 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.8"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_8 }
+
+_1_3_6_1_2_1_1_9_1_3_9 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.9"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_9 }
+
+_1_3_6_1_2_1_1_9_1_3_10 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.3.10"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_3_10 }
+
+_1_3_6_1_2_1_1_9_1_4_1 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.1"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_1 }
+
+_1_3_6_1_2_1_1_9_1_4_2 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.2"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_2 }
+
+_1_3_6_1_2_1_1_9_1_4_3 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.3"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_3 }
+
+_1_3_6_1_2_1_1_9_1_4_4 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.4"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_4 }
+
+_1_3_6_1_2_1_1_9_1_4_5 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.5"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_5 }
+
+_1_3_6_1_2_1_1_9_1_4_6 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.6"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_6 }
+
+_1_3_6_1_2_1_1_9_1_4_7 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.7"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_7 }
+
+_1_3_6_1_2_1_1_9_1_4_8 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.8"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_8 }
+
+_1_3_6_1_2_1_1_9_1_4_9 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.9"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_9 }
+
+_1_3_6_1_2_1_1_9_1_4_10 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.2.1.1.9.1.4.10"
+    ::= { myMIB _1_3_6_1_2_1_1_9_1_4_10 }
+
+hrSystemUptime_0 OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemUptime.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_1_0 }
+
+hrSystemDate_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemDate.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_2_0 }
+
+hrSystemInitialLoadDevice_0 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemInitialLoadDevice.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_3_0 }
+
+hrSystemInitialLoadParameters_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemInitialLoadParameters.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_4_0 }
+
+hrSystemNumUsers_0 OBJECT-TYPE
+    SYNTAX      Gauge
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemNumUsers.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_5_0 }
+
+hrSystemProcesses_0 OBJECT-TYPE
+    SYNTAX      Gauge
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemProcesses.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_6_0 }
+
+hrSystemMaxProcesses_0 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "hrSystemMaxProcesses.0"
+    ::= { myMIB _1_3_6_1_2_1_25_1_7_0 }
+
+_1_3_6_1_4_1_41260_100_10_1_1_0 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.1.0"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_1_0 }
+
+_1_3_6_1_4_1_41260_100_10_1_2_0 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.2.0"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_2_0 }
+
+_1_3_6_1_4_1_41260_100_10_1_3_0 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.3.0"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_3_0 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_5 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.5"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_5 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_6 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.6"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_6 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_7 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.7"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_7 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_1_8 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.1.8"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_1_8 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_5 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.5"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_5 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_6 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.6"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_6 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_7 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.7"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_7 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_2_8 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.2.8"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_2_8 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_5 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.5"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_5 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_6 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.6"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_6 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_7 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.7"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_7 }
+
+_1_3_6_1_4_1_41260_100_10_1_4_1_3_8 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.4.1.3.8"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_4_1_3_8 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_1_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.1.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_1_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_1_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.1.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_1_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_1_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.1.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_1_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_1_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.1.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_1_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_2_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.2.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_2_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_2_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.2.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_2_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_2_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.2.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_2_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_2_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.2.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_2_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_3_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.3.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_3_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_3_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.3.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_3_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_3_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.3.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_3_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_3_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.3.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_3_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_4_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.4.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_4_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_4_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.4.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_4_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_4_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.4.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_4_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_4_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.4.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_4_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_5_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.5.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_5_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_5_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.5.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_5_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_5_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.5.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_5_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_5_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.5.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_5_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_6_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.6.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_6_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_6_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.6.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_6_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_6_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.6.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_6_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_6_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.6.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_6_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_7_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.7.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_7_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_7_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.7.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_7_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_7_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.7.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_7_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_7_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.7.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_7_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_8_1 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.8.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_8_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_8_2 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.8.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_8_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_8_3 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.8.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_8_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_1_8_4 OBJECT-TYPE
+    SYNTAX      Integer
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.1.8.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_1_8_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_1_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.1.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_1_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_1_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.1.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_1_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_1_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.1.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_1_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_1_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.1.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_1_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_2_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.2.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_2_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_2_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.2.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_2_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_2_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.2.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_2_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_2_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.2.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_2_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_3_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.3.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_3_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_3_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.3.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_3_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_3_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.3.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_3_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_3_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.3.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_3_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_4_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.4.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_4_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_4_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.4.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_4_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_4_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.4.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_4_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_4_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.4.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_4_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_5_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.5.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_5_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_5_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.5.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_5_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_5_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.5.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_5_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_5_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.5.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_5_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_6_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.6.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_6_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_6_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.6.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_6_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_6_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.6.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_6_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_6_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.6.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_6_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_7_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.7.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_7_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_7_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.7.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_7_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_7_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.7.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_7_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_7_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.7.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_7_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_8_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.8.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_8_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_8_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.8.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_8_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_8_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.8.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_8_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_2_8_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.2.8.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_2_8_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_1_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.1.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_1_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_1_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.1.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_1_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_1_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.1.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_1_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_1_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.1.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_1_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_2_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.2.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_2_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_2_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.2.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_2_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_2_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.2.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_2_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_2_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.2.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_2_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_3_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.3.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_3_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_3_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.3.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_3_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_3_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.3.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_3_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_3_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.3.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_3_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_4_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.4.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_4_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_4_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.4.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_4_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_4_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.4.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_4_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_4_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.4.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_4_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_5_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.5.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_5_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_5_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.5.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_5_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_5_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.5.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_5_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_5_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.5.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_5_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_6_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.6.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_6_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_6_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.6.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_6_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_6_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.6.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_6_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_6_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.6.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_6_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_7_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.7.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_7_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_7_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.7.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_7_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_7_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.7.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_7_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_7_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.7.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_7_4 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_8_1 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.8.1"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_8_1 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_8_2 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.8.2"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_8_2 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_8_3 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.8.3"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_8_3 }
+
+_1_3_6_1_4_1_41260_100_10_1_5_1_3_8_4 OBJECT-TYPE
+    SYNTAX      OctetString
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        ".1.3.6.1.4.1.41260.100.10.1.5.1.3.8.4"
+    ::= { myMIB _1_3_6_1_4_1_41260_100_10_1_5_1_3_8_4 }
+
+END
